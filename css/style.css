@@ -14926,6 +14926,7 @@ video, .ie8-poster {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex: 1;
 }
 
 .container .login-box {
@@ -15004,6 +15005,100 @@ video, .ie8-poster {
   transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
   animation: animateBlink 3s linear infinite;
   animation-delay: calc(var(--i) * (3s / 50));
+}
+
+.container-2 {
+	font-family: "Poppins";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex: 1;
+  }
+  
+  .container-2 .login-box {
+	position: absolute;
+	width: 400px;
+  }
+  
+  .container-2 .login-box form {
+	width: 100%;
+	padding: 0 50px;
+  }
+  
+  .container-2 h2 {
+	font-size: 2em;
+	color: #3147ad;
+	text-align: center;
+  }
+  
+  .container-2 .input-box {
+	position: relative;
+	margin: 25px 0;
+  }
+  
+  .container-2 .input-box input {
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #1a1f36;
+	outline: none;
+	border-radius: 40px;
+	font-size: 1em;
+	color: #000; /* Changed color to black for visibility on white backgrounds */
+	padding: 0 20px;
+	transition: 0.5s;
+  }
+  
+  .container-2 .input-box input:focus,
+  .container-2 .input-box input:valid {
+	border-color: #3147ad;
+  }
+  
+  
+  
+  
+  .container-2 .btn {
+	width: 100%;
+	height: 45px;
+	border-radius: 45px;
+	background: #3147ad;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	color: #fff; /* Adjusted for better button contrast */
+	font-weight: 600;
+  }
+  .container-2 .btn1 {
+	  width: 50%;
+	  height: 25px;
+	  cursor: pointer;
+	  font-size: 1em;
+	  color: #fff; /* Adjusted for better button contrast */
+	  font-weight: 600;
+	}
+  
+  
+  .container-2 span {
+	position: absolute;
+	top: 10em;
+	left: 62px;
+	width: 35px;
+	height: 6px;
+	background: #1a1f36;
+	border-radius: 8px;
+	transform-origin: 128px;
+	transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+	animation: animateBlink 3s linear infinite;
+	animation-delay: calc(var(--i) * (3s / 50));
+  }
+  
+.split{
+	display: flex;
 }
 
 @keyframes animateBlink {
