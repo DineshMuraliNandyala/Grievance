@@ -120,7 +120,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
       },
     },
-  });
+  });document.getElementById('totalFiledValue').textContent = totalFiled;
+  document.getElementById('totalResolvedValue').textContent = totalResolved;
+
 
   // Data for Weekly Bar Chart
   const weeks = Object.keys(weeklyData);
